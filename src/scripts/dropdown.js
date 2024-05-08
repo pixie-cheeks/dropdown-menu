@@ -25,6 +25,7 @@ const createDropdown = (
 
   if (triggerEvent === 'hover') {
     bindHoverEvents(button, menu, visibilityClass);
+    return;
   }
   button.addEventListener(triggerEvent, () => {
     menu.classList.toggle(visibilityClass);
