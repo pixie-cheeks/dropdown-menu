@@ -12,11 +12,16 @@
 
   <body class="page">
     <div class="heading">A dropdown button</div>
-    <button class="button">Click here <i class="bx bxs-down-arrow"></i></button>
-    <div class="dropdown dropdown--hidden">
-      <button class="dropdown__button">Edit</button>
-      <button class="dropdown__button">Copy</button>
-      <button class="dropdown__button">Delete</button>
+    <div class="dropdown">
+      <button class="dropdown__trigger button">
+        Click here <i class="bx bxs-down-arrow"></i>
+      </button>
+
+      <div class="dropdown__menu dropdown__menu--hidden">
+        <button class="dropdown__item">Edit</button>
+        <button class="dropdown__item">Copy</button>
+        <button class="dropdown__item">Delete</button>
+      </div>
     </div>
   </body>
 </html>

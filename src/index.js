@@ -1,12 +1,14 @@
 /* eslint-disable import/no-import-module-exports */
 
 import './style.css';
-import './scripts/dropdown';
+import createDropdown from './scripts/dropdown';
 
-console.log('Check whether everything is working or not.');
+createDropdown(
+  document.querySelector('.button'),
+  document.querySelector('.dropdown__menu'),
+  'dropdown__menu--hidden',
+);
 
-if (process.env.NODE_ENV === 'development') {
-  if (module.hot) {
-    module.hot.accept();
-  }
+if (process.env.NODE_ENV === 'development' && module.hot) {
+  module.hot.accept();
 }
