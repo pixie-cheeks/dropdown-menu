@@ -24,11 +24,11 @@ function createDropdownManager(invisibilityClass) {
     menu.classList.remove(invisibilityClass);
   };
 
-  const bindHoverEvents = (button, menu) => {
-    eventBinder.bindEvent(button, 'mouseenter', () => {
+  const bindHoverEvents = (trigger, menu) => {
+    eventBinder.bindEvent(trigger, 'mouseenter', () => {
       showDropdown(menu, invisibilityClass);
     });
-    eventBinder.bindEvent(button, 'mouseleave', (e) => {
+    eventBinder.bindEvent(trigger, 'mouseleave', (e) => {
       if (e.toElement.closest(`.${menu.className}`)) return;
 
       hideDropdown(menu, invisibilityClass);
@@ -39,8 +39,8 @@ function createDropdownManager(invisibilityClass) {
     });
   };
 
-  const bindClickEvents = (button, menu) => {
-    eventBinder.bindEvent(button, 'click', () => {
+  const bindClickEvents = (trigger, menu) => {
+    eventBinder.bindEvent(trigger, 'click', () => {
       if (visibleDropdown === null) {
         showDropdown(menu);
         visibleDropdown = menu;

@@ -1,8 +1,12 @@
 {
-  "name": "dropdown-menu",
+  "name": "@pixie-cheeks/dropdown-menu",
   "version": "1.0.0",
   "description": "A reusable dropdown menu for the web",
   "main": "src/scripts/dropdown.js",
+  "homepage": "https://github.com/pixie-cheeks/dropdown-menu#readme",
+  "bugs": {
+    "url": "https://github.com/pixie-cheeks/dropdown-menu/issues"
+  },
   "files": [
     "./src/scripts/dropdown.js"
   ],
@@ -13,7 +17,15 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "github:pixie-cheeks/dropdown-menu"
+  },
+  "keywords": [
+    "dropdown",
+    "menu",
+    "vanilla"
+  ],
   "author": "pixie-cheeks",
   "license": "ISC",
   "devDependencies": {
