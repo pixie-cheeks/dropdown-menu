@@ -81,6 +81,7 @@
   font-size: 3rem;
   overflow: hidden;
   box-shadow: 1px 1px 2px 0 black;
+  z-index: 1;
 }
 
 .dropdown__menu--hidden {
