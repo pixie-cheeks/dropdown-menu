@@ -98,4 +98,4 @@ function createDropdownManager(invisibilityClass) {
   return { addDropdown, removeDropdown };
 }
 
-export default createDropdownManager;
+module.exports = createDropdownManager;

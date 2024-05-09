@@ -2,7 +2,10 @@
   "name": "dropdown-menu",
   "version": "1.0.0",
   "description": "A reusable dropdown menu for the web",
-  "main": "index.js",
+  "main": "src/scripts/dropdown.js",
+  "files": [
+    "./src/scripts/dropdown.js"
+  ],
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",

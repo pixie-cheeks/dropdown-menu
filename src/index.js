@@ -1,7 +1,8 @@
 /* eslint-disable import/no-import-module-exports */
 
 import './style.css';
-import createDropdownManager from './scripts/dropdown';
+
+const createDropdownManager = require('./scripts/dropdown');
 
 const manager = createDropdownManager('dropdown__menu--hidden');
 
